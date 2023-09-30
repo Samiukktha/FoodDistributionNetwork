@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+nav {
+  background-image: url(images/food.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  padding: 2% 2%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 97%;
+}
+
+nav img {
+  width: 90px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: rgb(213, 173, 126);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: rgb(237, 228, 209);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.image {
+  margin-top: 135px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.image img {
+  max-width: 17%;
+  height: auto;
+  border-radius: 5px;
+}
+.content {
+  border: 2px thin inset rgb(182, 145, 102);
+  border-radius: 5px;
+  box-shadow: -1px 1px 5px 2px rgba(182, 145, 102, 0.422);
+  width: 85%;
+  margin: 10px 50px 50px 80px;
+  font-size: 17px;
+  color: rgb(40, 38, 38);
+  padding: 15px 15px 15px 15px;
+}

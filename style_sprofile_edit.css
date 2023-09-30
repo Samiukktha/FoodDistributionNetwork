@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+nav {
+  background-image: url(images/food.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  padding: 2% 2%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 97%;
+}
+
+nav img {
+  width: 90px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: rgb(213, 173, 126);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: rgb(237, 228, 209);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+#prof {
+  width: 50%;
+  height: 580px;
+  color: rgb(30, 31, 32);
+  margin: 100px 0px 0px 250px;
+  padding: 50px;
+  box-shadow: 1px 1px 8px 8px rgba(1, 43, 16, 0.484);
+  border-radius: 10ps;
+}
+
+h2 {
+  text-decoration: underline;
+  color: rgb(113, 77, 24);
+}
+
+#btn {
+  color: white;
+  background-color: rgba(2, 57, 21, 0.84);
+  padding: 10px;
+  font-size: 300;
+  border-radius: 3px;
+}
+
+form img {
+  width: 100px;
+  height: 100px;
+}

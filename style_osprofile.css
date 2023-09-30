@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+nav {
+  background-image: url(food.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  padding: 2% 2%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 97%;
+}
+
+nav img {
+  width: 90px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #d5ad7e;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: rgb(237, 228, 209);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.sprof {
+  border: 2px thin inset;
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px 8px rgba(2, 57, 21, 0.84);
+  margin: 155px 85px 35px 85px;
+  font-size: 17px;
+  color: rgb(40, 38, 38);
+  padding: 1px 15px 15px 15px;
+  text-align: center;
+  padding: 10px 20px;
+  height: 450px;
+}
+
+.sprof h1 {
+  color: rgb(113, 77, 24);
+  text-decoration: underline 2px;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgb(4, 65, 13);
+  padding: 5px 10px 5px 10px;
+  background: rgb(4, 65, 13);
+}
+
+.btn:hover {
+  border: 1px solid rgb(4, 65, 13);
+  background: rgba(4, 65, 13, 0.781);
+  transition: 1s;
+}
+
+.content img {
+  width: 170px;
+  height: 170px;
+}
+
+.content {
+  display: flex;
+}
+
+.sec {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.inner {
+  text-align: left;
+  margin-left: 20px;
+}
